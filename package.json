@@ -1,0 +1,15 @@
+{
+  "name": "cool-beans-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "An easy-on-the-eyes theme syntax. Cool Beans?",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/jhelst/cool-beans-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
