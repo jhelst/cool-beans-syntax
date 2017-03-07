@@ -308,3 +308,37 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }
+
+
+/*** matching bracket highlight ***/
+
+@bracket-underline-color: #6D6;
+@-webkit-keyframes bracketanimation {
+  from {
+    background-color: transparent;
+    border-color: @bracket-underline-color;
+  }
+  40% {
+    background-color: lighten(@bracket-underline-color, 10%);
+    border-color: lighten(@bracket-underline-color, 20%);
+  }
+  to {
+    background-color: transparent;
+    border-color: @bracket-underline-color;
+  }
+}
+
+.bracket-matcher .region {
+  border-bottom: 0;
+}
+
+.bracket-matcher .region:after {
+  content: '\00a0';
+  -webkit-animation-name: bracketanimation;
+  -webkit-animation-duration: 600ms;
+  border-bottom: 2px dotted @bracket-underline-color;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background-color: transparent;
+}
