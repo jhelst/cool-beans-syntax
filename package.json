@@ -1,11 +1,13 @@
 {
   "name": "cool-beans-syntax",
   "theme": "syntax",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Syntax theme for cool-beans-ui. Cool Beans?",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark",
+    "purple"
   ],
   "repository": "https://github.com/jhelst/cool-beans-syntax",
   "license": "MIT",
